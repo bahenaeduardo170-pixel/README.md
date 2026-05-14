@@ -1,0 +1,82 @@
+
+# Análisis de ConnectaTel Telecom
+
+## Objetivo del proyecto
+
+Este proyecto analiza el comportamiento de uso de los clientes de ConnectaTel, una empresa de telecomunicaciones que opera en Latinoamérica. El objetivo es identificar patrones de uso, detectar valores atípicos, segmentar a los clientes y generar recomendaciones comerciales para mejorar la oferta de planes y la retención de clientes.
+
+## Conjuntos de datos utilizados
+
+El análisis utiliza tres conjuntos de datos:
+
+- `plans.csv`: información sobre los planes disponibles, precio mensual, minutos incluidos, GB incluidos y costos por uso adicional.
+
+- `users_latam.csv`: información del cliente, incluyendo edad, ciudad, fecha de registro, plan y fecha de baja.
+
+- `usage.csv`: actividad de uso real, incluyendo llamadas, mensajes, duración y longitud de los mensajes.
+
+## Pasos del análisis
+
+El proyecto sigue estos pasos principales:
+
+1. Cargar y explorar los conjuntos de datos.
+
+2. Identificar problemas de calidad de datos., como valores faltantes, valores centinela y fechas no válidas.
+3. Corregir problemas básicos de datos, como edades inválidas, ciudades de referencia y fechas futuras.
+
+4. Agregar datos de uso por usuario.
+
+5. Generar estadísticas resumidas sobre el comportamiento del cliente.
+
+6. Visualizar distribuciones y detectar valores atípicos.
+
+7. Crear segmentos de clientes según la edad y el nivel de uso.
+
+8. Generar información estratégica y recomendaciones comerciales.
+
+## Conclusiones clave
+
+- La mayoría de los clientes pertenecen al grupo de edad adulto.
+
+- La mayoría de los usuarios muestran un comportamiento de uso medio.
+
+- Un pequeño grupo de usuarios presenta un consumo muy alto de minutos de llamadas, lo que podría representar usuarios de alto valor o de uso intensivo.
+
+- El plan Básico tiene la mayor base de usuarios, mientras que los usuarios Premium representan un segmento más pequeño, pero potencialmente valioso.
+
+- Los problemas de calidad de los datos incluyeron edades inválidas, ciudades desconocidas, fechas futuras y valores faltantes estructurados en los datos de uso.
+
+## Recomendaciones comerciales
+
+- Crear ofertas específicas para clientes de alto uso.
+
+- Diseñar estrategias de retención para clientes de bajo uso.
+- Personaliza las ofertas según grupos de edad y comportamiento de uso.
+
+- Monitorea patrones de uso extremos para identificar clientes VIP o posibles anomalías.
+
+- Mejora las reglas de validación de datos para evitar edades no válidas, ciudades desconocidas y fechas futuras.
+
+## Cómo ejecutar el cuaderno
+
+1. Abre el cuaderno en Google Colab o Jupyter Notebook.
+
+2. Asegúrate de que los siguientes conjuntos de datos estén disponibles en la carpeta `/datasets/`:
+
+- `plans.csv`
+
+- `users_latam.csv`
+
+- `usage.csv`
+3. Ejecuta todas las celdas de arriba a abajo.
+
+4. Revisa los resultados, las visualizaciones y las conclusiones finales.
+
+## Estructura del repositorio
+
+```texto
+.
+
+├── notebooks/
+│ └── connectatel_analysis.ipynb
+├── README.md
